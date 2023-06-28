@@ -1,3 +1,5 @@
+/* The provided code is a basic Express.js server that serves a web application for weather
+information. Here's a breakdown of what the code does: */
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
@@ -7,6 +9,10 @@ const forecast = require('./utils/forecast')
 const app = express()
 
 // Define paths for Express config
+/* `const publicDirectoryPath = path.join(__dirname, '../public')` is defining the path to the public
+directory that contains static assets such as CSS, JavaScript, and images. It uses the `path` module
+to join the current directory (`__dirname`) with the relative path to the public directory
+(`../public`). This path is then used to serve static files using `express.static()` middleware. */
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')

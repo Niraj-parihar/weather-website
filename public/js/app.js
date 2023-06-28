@@ -1,3 +1,4 @@
+/* This code is responsible for handling the form submission and fetching weather data from a server. */
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
